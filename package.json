@@ -1,0 +1,54 @@
+{
+    "name": "@nwc-sdk/package",
+    "version": "1.0.0",
+    "description": "",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "typings": "dist/index.d.ts",
+    "directories": {
+        "dist": "dist"
+    },
+    "publishConfig": {
+        "access": "public"
+    },
+    "files": [
+        "dist"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/NTX-XT/nwc-sdk-package.git"
+    },
+    "author": "John Pouliezos",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/NTX-XT/nwc-sdk-package/issues"
+    },
+    "homepage": "https://github.com/NTX-XT/nwc-sdk-package#readme",
+    "scripts": {
+        "build": "node ./build.js run production",
+        "build:dev": "tsc --sourcemap --declarationMap"
+    },
+    "devDependencies": {
+        "@tsconfig/recommended": "^1.0.1",
+        "@typescript-eslint/eslint-plugin": "^5.6.0",
+        "@typescript-eslint/parser": "^5.6.0",
+        "dts-bundle-generator": "^6.4.0",
+        "esbuild": "^0.14.2",
+        "esbuild-plugin-clean": "^0.9.0",
+        "esbuild-plugin-copy": "^1.2.1",
+        "esbuild-plugin-node-externals": "^0.3.0",
+        "eslint": "^8.4.1",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-config-standard": "^16.0.3",
+        "eslint-plugin-import": "^2.25.3",
+        "eslint-plugin-node": "^11.1.0",
+        "eslint-plugin-promise": "^6.0.0",
+        "prettier": "^2.4.1",
+        "ts-node": "^10.4.0",
+        "typescript": "^4.5.2"
+    },
+    "dependencies": {
+        "@nwc-sdk/client": "^1.1.5",
+        "validator": "^13.7.0"
+    }
+}
